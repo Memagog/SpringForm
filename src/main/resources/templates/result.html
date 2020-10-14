@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; UTF-8">
     <title>Results</title>
 </head>
 <body>
     <h1>Results</h1>
-    <p th:text = "'id: ' = ${user.id}"/>
-    <p th:text = "'name: ' = ${user.name}"/>
-    <a href="index.html"> Submit another user</a>
+    <p th:text = "'id: ' + ${index.id}"/>
+    <p th:text = "'name: ' + ${index.name}"/>
+    <a href="/index"> Submit another user</a>
 </body>
 </html>

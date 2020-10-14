@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; UTF-8">
     <title>UserFormExample</title>
 </head>
 <body>
 <h1>
     Form
 </h1>
-<form action="#" th:action="@{/index}" th:object="${user}" method="post">
+<form action="#" th:action="@{/index}" th:object="${index}" method="post">
     <p>Id:<input type="text" th:field="*{id}"/></p>
 
     <p>Name:<input type="text" th:field="*{name}"/></p>
