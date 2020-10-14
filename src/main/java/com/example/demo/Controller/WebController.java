@@ -19,7 +19,7 @@ public class WebController {
     }
     @RequestMapping(value ="/index", method = RequestMethod.POST)
     public String formSubmit(@ModelAttribute User user, Model model) {
-        model.addAttribute("index", user);
+        model.addAttribute("userdata", user);
         return "result";
     }
 
